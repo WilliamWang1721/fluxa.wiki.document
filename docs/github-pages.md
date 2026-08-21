@@ -10,10 +10,12 @@ https://williamwang1721.github.io/fluxa.wiki.document/
 
 ## 仓库管理员需要做的设置（一次性）
 
+Pages Source 已设为 **GitHub Actions**（2026-08-21）。若部署仍失败，再检 **Settings → Actions → General** 的 Workflow permissions 是否为 Read and write。
+
 若 Actions 部署失败并提示缺少 Pages 权限，请在 GitHub 仓库里完成以下步骤：
 
 1. 打开 **Settings → Pages**。
-2. **Build and deployment → Source** 选择 **GitHub Actions**（不要选 “Deploy from a branch”）。
+2. **Build and deployment → Source** 选择 **GitHub Actions**（不要选 “Deploy from a branch”）〃
 3. 打开 **Settings → Actions → General**：
    - **Workflow permissions** 选 **Read and write permissions**（或至少允许 `pages: write` 与 `id-token: write`）。
    - 若组织策略限制了 Actions，需组织管理员放行 `actions/deploy-pages` 与 `actions/upload-pages-artifact`。
