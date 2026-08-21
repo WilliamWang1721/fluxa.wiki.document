@@ -63,6 +63,14 @@ status: published
 - 把编号发给律师，由律师把整套材料递交 [[banks:hsbc-hong-kong|HSBC HK]](../banks/hsbc-hong-kong.md)。
 - 提交后若干工作日内 HSBC 会联系申请人及律师回访，确认本人签章后流程完成。
 
+### 回访与合规
+
+上述回访用于**确认本人签章**及流程真实性，属于开户见证环节的核实，**不是**理财产品销售话术。
+
+内地对投资产品实行**适当性管理**。**不得在客户尚未开立 [[banks:hsbc-china|HSBC CN]](../banks/hsbc-china.md) 汇丰卓越理财（HSBC Premier）、尚未完成风险承受能力评估**（risk profiling questionnaire / risk tolerance assessment）**时，向其介绍或销售具体理财产品详情。** 这与「如何在回访中回答是否线下见证」无关；本词条不指导如何回答合规问询。
+
+[[sources:hsbc-china-wealth-management-platform|HSBC CN 财富管理平台]](../sources/hsbc-china-wealth-management-platform.md) 写明：首次购买投资产品且尚未完成风险评估时，由客户经理协助完成评估；认购前须确认风险承受能力与产品风险等级匹配，**不匹配则不能认购**。本词条不编造具体产品名单或金额门槛。
+
 ## 本站目前重点记录的银行
 
 目前本仓已核到官方产品说明、且与见证开户关系最直接的是 HSBC。同一集团跨地网点是这类服务的常见形态，所以会同时出现 HSBC HK 与 HSBC CN：
@@ -84,12 +92,14 @@ status: published
 - [[sources:hsbc-china-gba-type-ii-agreement|汇丰中国大湾区人民币 II 类结算账户服务协议]](../sources/hsbc-china-gba-type-ii-agreement.md)（[官方 PDF](https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/gba-cny-type-ii-settlement-account-service-agreement-cn.pdf)）
 - [[sources:hsbc-hong-kong-open-account-international|HSBC HK「如何开立香港户口」]](../sources/hsbc-hong-kong-open-account-international.md)（[官方页](https://www.hsbc.com.hk/zh-hk/international/banking-in-hong-kong/)）
 - [[sources:hsbc-china-gba-account-connect|汇丰中国大湾区企业账户通]](../sources/hsbc-china-gba-account-connect.md)（[官方页](https://www.business.hsbc.com.cn/zh-cn/campaigns/gba/account-connect)）
+- [[sources:hsbc-china-wealth-management-platform|HSBC CN 财富管理平台]](../sources/hsbc-china-wealth-management-platform.md)（[官方页](https://www.hsbc.com.cn/investments/wealth-management-platform/)）
 - [[sources:boc-hong-kong-witnessed-account-opening|中银香港见证开户服务]](../sources/boc-hong-kong-witnessed-account-opening.md)（[官方页](https://www.bochk.com/m/tc/crossborder/personal/financialservicehk/account.html)）
 
 ## 相关词条
 
 - [[banks:hsbc-hong-kong|HSBC HK]](../banks/hsbc-hong-kong.md)
 - [[banks:hsbc-china|HSBC CN]](../banks/hsbc-china.md)
+- [[glossary:minor-account-opening|未成年开户]](./minor-account-opening.md)
 - [[banks:boc-hong-kong|中银香港]](../banks/boc-hong-kong.md)
 - [[glossary:_index|术语索引]](./_index.md)
 

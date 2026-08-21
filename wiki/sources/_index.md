@@ -79,4 +79,14 @@ status: published
 - [[sources:hsbc-china-gba-account-connect|汇丰中国 大湾区企业账户通]](./hsbc-china-gba-account-connect.md)
 - [[sources:boc-hong-kong-witnessed-account-opening|中银香港 见证开户服务]](./boc-hong-kong-witnessed-account-opening.md)
 
+## HSBC CN 卓越理财 / 家庭 / 未成年
+
+- [[sources:hsbc-china-premier|HSBC CN 汇丰卓越理财]](./hsbc-china-premier.md)
+- [[sources:hsbc-china-premier-family|HSBC CN 汇丰卓越理财家庭金融服务]](./hsbc-china-premier-family.md)
+- [[sources:hsbc-china-premier-junior-account-terms|HSBC CN 汇丰卓越理财青少年成长账户条款]](./hsbc-china-premier-junior-account-terms.md)
+- [[sources:hsbc-china-premier-welcome-pack|HSBC CN 汇丰卓越理财欢迎手册]](./hsbc-china-premier-welcome-pack.md)
+- [[sources:hsbc-china-premier-junior-studies-support|HSBC CN 留学通（青少年 14–18）]](./hsbc-china-premier-junior-studies-support.md)
+- [[sources:hsbc-china-wealth-management-platform|HSBC CN 财富管理平台]](./hsbc-china-wealth-management-platform.md)
+- [[sources:hsbc-hong-kong-children-savings-account|HSBC HK 汇丰儿童储蓄账户]](./hsbc-hong-kong-children-savings-account.md)
+
 [[Category:索引]]
