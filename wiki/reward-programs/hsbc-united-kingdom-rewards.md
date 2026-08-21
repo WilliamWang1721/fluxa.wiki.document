@@ -2,6 +2,8 @@
 collection: reward-programs
 title: '汇丰英国奖赏'
 slug: hsbc-united-kingdom-rewards
+kind: regional
+parent: hsbc-rewards
 bank: hsbc-united-kingdom
 region: GLOBAL
 currencyName: '奖赏'
@@ -18,6 +20,7 @@ generatedAt: 2026-08-21
 | 字段 | 值 |
 | --- | --- |
 | 所属银行 | [[banks:hsbc-united-kingdom|汇丰英国]](../banks/hsbc-united-kingdom.md) |
+| 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
 | 地区 | GLOBAL |
 

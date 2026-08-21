@@ -2,6 +2,8 @@
 collection: reward-programs
 title: '汇丰海峡群岛及马恩岛奖赏'
 slug: hsbc-channel-islands-isle-of-man-rewards
+kind: regional
+parent: hsbc-rewards
 bank: hsbc-channel-islands-isle-of-man
 region: GLOBAL
 currencyName: '奖赏'
@@ -18,6 +20,7 @@ generatedAt: 2026-08-21
 | 字段 | 值 |
 | --- | --- |
 | 所属银行 | [[banks:hsbc-channel-islands-isle-of-man|汇丰海峡群岛及马恩岛]](../banks/hsbc-channel-islands-isle-of-man.md) |
+| 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
 | 地区 | GLOBAL |
 

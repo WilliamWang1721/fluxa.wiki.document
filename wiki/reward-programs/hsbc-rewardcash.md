@@ -2,6 +2,8 @@
 collection: reward-programs
 title: '汇丰 RewardCash'
 slug: hsbc-rewardcash
+kind: regional
+parent: hsbc-rewards
 bank: hsbc-hong-kong
 region: HK
 currencyName: 'RewardCash'
@@ -18,6 +20,7 @@ generatedAt: 2026-08-21
 | 字段 | 值 |
 | --- | --- |
 | 所属银行 | [[banks:hsbc-hong-kong|汇丰香港]](../banks/hsbc-hong-kong.md) |
+| 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | RewardCash |
 | 地区 | HK |
 

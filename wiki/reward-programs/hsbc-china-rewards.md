@@ -2,6 +2,8 @@
 collection: reward-programs
 title: '汇丰中国奖赏'
 slug: hsbc-china-rewards
+kind: regional
+parent: hsbc-rewards
 bank: hsbc-china
 region: CN
 currencyName: '奖赏'
@@ -18,6 +20,7 @@ generatedAt: 2026-08-21
 | 字段 | 值 |
 | --- | --- |
 | 所属银行 | [[banks:hsbc-china|汇丰中国]](../banks/hsbc-china.md) |
+| 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
 | 地区 | CN |
 

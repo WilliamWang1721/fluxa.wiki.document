@@ -181,18 +181,27 @@ status: published
 
 **何时新建：** 该行出现新的积分货币或独立计划（例如新的航司联名里数池）。同一行多张卡共用一个体系时，**共用一篇**，不要每张卡一个体系。
 
+浏览模型是 **单向体系 × 地区**：集团各市场的积分计划挂在集团体系下，用 `region` 区分市场，不是并列的不同体系。
+
 ### 必填
 
 | 字段 | 规则 |
 | --- | --- |
-| `bank` | 所属银行 slug |
-| `region` | 与银行一致 |
+| `bank` | 所属银行 slug；市场实例指向**子行**（如 `hsbc-hong-kong`），集团体系指向集团银行（如 `hsbc`） |
+| `region` | 与银行一致；横向地区标签（`HK` `CN` `SG` `US` `GLOBAL` 等） |
 | `currencyName` | 对外单位名，如 `RewardCash`、`Cash Dollars` |
 | 首段 | 简介，对应 Payload `summary` |
 
+### 选填（集团体系 / 市场实例；独立计划不要填）
+
+| 字段 | 规则 |
+| --- | --- |
+| `kind` | `group` = 单向体系（一个银行集团一条）；`regional` = 该集团在某市场的实例。独立计划（恒生、东亚、美运 HK 等）**省略** `kind` 与 `parent` |
+| `parent` | **仅市场实例。** 值为集团体系 slug，如 `parent: hsbc-rewards`。字段名必须是 `parent`，不要用 `group`。集团体系页和独立计划都不要填。导入 Payload 时变成 relationship → `reward-programs` |
+
 转点伙伴写在 `## 转点伙伴` 表（`伙伴 / 比例 / 来源`）。没有核验过就不要编造比例。
 
-回写：`wiki/reward-programs/_index.md`，以及银行页信息框里的「积分体系」链接。
+回写：`wiki/reward-programs/_index.md`（集团体系一行 + 按 `region` 列市场实例），以及银行页信息框里的「积分体系」链接。
 
 模板：[`wiki/_templates/reward-program.md`](../_templates/reward-program.md)
 

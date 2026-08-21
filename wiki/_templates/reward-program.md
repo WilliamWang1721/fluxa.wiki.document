@@ -2,6 +2,9 @@
 collection: reward-programs
 title: '积分体系名称'
 slug: replace-program-slug
+# 集团单向体系：kind: group（不要写 parent）
+# 市场实例：kind: regional 且 parent: replace-group-program-slug
+# 独立计划：省略 kind 与 parent
 bank: hang-seng
 region: HK
 currencyName: '积分单位名'

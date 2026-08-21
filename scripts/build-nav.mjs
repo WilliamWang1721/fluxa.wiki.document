@@ -37,10 +37,18 @@ function parseFrontmatter(filePath) {
   const content = fs.readFileSync(filePath, 'utf8');
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) {
-    return { title: null, content };
+    return { title: null, kind: null, parent: null, content };
   }
-  const titleMatch = match[1].match(/^title:\s*(['"]?)(.+?)\1\s*$/m);
-  return { title: titleMatch ? titleMatch[2] : null, content };
+  const fm = match[1];
+  const titleMatch = fm.match(/^title:\s*(['"]?)(.+?)\1\s*$/m);
+  const kindMatch = fm.match(/^kind:\s*(\S+)\s*$/m);
+  const parentMatch = fm.match(/^parent:\s*(\S+)\s*$/m);
+  return {
+    title: titleMatch ? titleMatch[2] : null,
+    kind: kindMatch ? kindMatch[1] : null,
+    parent: parentMatch ? parentMatch[1] : null,
+    content,
+  };
 }
 
 function pageLabel(filePath, fallback) {
@@ -75,7 +83,73 @@ function ensureTopLevelIndex(folderName) {
   console.log('Created ' + path.relative(ROOT, indexPath));
 }
 
+function sortByLabel(a, b) {
+  return a.label.localeCompare(b.label, 'zh-Hans');
+}
+
+function listRewardProgramMarkdownFiles(dir, prefix) {
+  const entries = fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) =>
+    a.name.localeCompare(b.name, 'zh-Hans')
+  );
+
+  const groups = [];
+  const childrenByParent = new Map();
+  const independent = [];
+
+  for (const entry of entries) {
+    if (!entry.isFile() || !entry.name.endsWith('.md')) {
+      continue;
+    }
+    if (entry.name === '_index.md' || SKIP_FILES.has(entry.name)) {
+      continue;
+    }
+
+    const filePath = path.join(dir, entry.name);
+    const { title, kind, parent } = parseFrontmatter(filePath);
+    const slug = entry.name.replace(/\.md$/, '');
+    const item = {
+      slug,
+      label: title || slug,
+      rel: prefix + entry.name,
+    };
+
+    if (kind === 'group') {
+      groups.push(item);
+    } else if (kind === 'regional' && parent) {
+      if (!childrenByParent.has(parent)) {
+        childrenByParent.set(parent, []);
+      }
+      childrenByParent.get(parent).push(item);
+    } else {
+      independent.push(item);
+    }
+  }
+
+  for (const children of childrenByParent.values()) {
+    children.sort(sortByLabel);
+  }
+
+  const lines = [];
+  const topLevel = [...groups, ...independent].sort(sortByLabel);
+
+  for (const item of topLevel) {
+    lines.push('- [' + item.label + '](' + toDocsifyPath(item.rel) + ')');
+    const children = childrenByParent.get(item.slug);
+    if (children) {
+      for (const child of children) {
+        lines.push('  - [' + child.label + '](' + toDocsifyPath(child.rel) + ')');
+      }
+    }
+  }
+
+  return lines;
+}
+
 function listMarkdownFiles(dir, prefix = '') {
+  if (prefix === 'reward-programs' + path.sep) {
+    return listRewardProgramMarkdownFiles(dir, prefix);
+  }
+
   const entries = fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) =>
     a.name.localeCompare(b.name, 'zh-Hans')
   );

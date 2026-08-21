@@ -2,6 +2,8 @@
 collection: reward-programs
 title: '汇丰新加坡奖赏'
 slug: hsbc-singapore-rewards
+kind: regional
+parent: hsbc-rewards
 bank: hsbc-singapore
 region: SG
 currencyName: '奖赏'
@@ -18,6 +20,7 @@ generatedAt: 2026-08-21
 | 字段 | 值 |
 | --- | --- |
 | 所属银行 | [[banks:hsbc-singapore|汇丰新加坡]](../banks/hsbc-singapore.md) |
+| 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
 | 地区 | SG |
 

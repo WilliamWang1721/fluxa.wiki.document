@@ -2,6 +2,8 @@
 collection: reward-programs
 title: '汇丰越南奖赏'
 slug: hsbc-vietnam-rewards
+kind: regional
+parent: hsbc-rewards
 bank: hsbc-vietnam
 region: GLOBAL
 currencyName: '奖赏'
@@ -18,6 +20,7 @@ generatedAt: 2026-08-21
 | 字段 | 值 |
 | --- | --- |
 | 所属银行 | [[banks:hsbc-vietnam|汇丰越南]](../banks/hsbc-vietnam.md) |
+| 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
 | 地区 | GLOBAL |
 

@@ -1,47 +1,17 @@
 ---
-collection: pages
-title: '积分体系词条'
-slug: reward-programs-index
-status: published
+collection: reward-programs
+title: 'HSBC'
+slug: hsbc-rewards
+kind: group
+bank: hsbc
+region: GLOBAL
 ---
 
-# 积分体系词条
+# HSBC
 
-## 东亚银行
+HSBC 的积分体系（单向体系）；各地计划用地区区分，不是并列的不同体系.
 
-- [[reward-programs:bea-rewards|东亚银行奖赏]](./bea-rewards.md)
-
-## 中信银行国际
-
-- [[reward-programs:citic-international-rewards|中信银行国际奖赏]](./citic-international-rewards.md)
-
-## 中银香港
-
-- [[reward-programs:boc-hong-kong-points|中银香港积分]](./boc-hong-kong-points.md)
-
-## 富邦银行
-
-- [[reward-programs:fubon-rewards|富邦银行奖赏]](./fubon-rewards.md)
-
-## 工银亚洲
-
-- [[reward-programs:icbc-asia-rewards|工银亚洲奖赏]](./icbc-asia-rewards.md)
-
-## 建行亚洲
-
-- [[reward-programs:ccb-asia-points|建行亚洲积分]](./ccb-asia-points.md)
-
-## 恒生银行
-
-- [[reward-programs:hang-seng-points|恒生积分]](./hang-seng-points.md)
-
-## 招商永隆银行
-
-- [[reward-programs:cmb-wing-lung-bonus-points|招商永隆 Bonus Point]](./cmb-wing-lung-bonus-points.md)
-
-## HSBC
-
-- [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md)
+## 地区
 
 ### CN
 
@@ -82,12 +52,5 @@ status: published
 
 - [[banks:hsbc-united-states|HSBC US]](../banks/hsbc-united-states.md) · [[reward-programs:hsbc-united-states-rewards|汇丰美国奖赏]](./hsbc-united-states-rewards.md)
 
-## 渣打香港
-
-- [[reward-programs:standard-chartered-rewards|渣打奖励]](./standard-chartered-rewards.md)
-
-## 美国运通
-
-- [[reward-programs:amex-membership-rewards-hk|美国运通 Membership Rewards]](./amex-membership-rewards-hk.md)
-
-[[Category:索引]]
+[[Category:积分体系]]
+[[Category:汇丰]]

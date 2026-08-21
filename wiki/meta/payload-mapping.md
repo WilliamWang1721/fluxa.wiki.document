@@ -62,15 +62,17 @@ status: published
 
 ## 积分体系 `reward-programs`
 
-| Frontmatter | Payload 字段 |
-| --- | --- |
-| `title` | `title` |
-| `slug` | `slug` |
-| `bank` | `bank` |
-| `region` | `region` |
-| `currencyName` | `currencyName` |
-| 首段 | `summary` |
-| （未导出） | `transferPartners` |
+| Frontmatter | Payload 字段 | 说明 |
+| --- | --- | --- |
+| `title` | `title` | 对外名称 |
+| `slug` | `slug` | URL |
+| `bank` | `bank` | relationship → `banks`；市场实例挂子行，集团体系挂集团银行 |
+| `region` | `region` | 横向地区标签 |
+| `kind` | `kind`（select：`group` / `regional`） | **独立计划省略**，缺省即普通 program。不要发明第三种取值 |
+| `parent` | `parent`（relationship → `reward-programs`） | **仅市场实例填写。** 本仓写集团体系 slug 字符串（如 `parent: hsbc-rewards`）；Payload 存指向集团体系文档的 relationship。字段名必须是 `parent`，不要用 `group`。集团体系页和独立计划都不要填 |
+| `currencyName` | `currencyName` | 积分单位名 |
+| 首段 | `summary` | |
+| （未导出） | `transferPartners` | |
 
 ## 来源 `sources`
 
@@ -86,7 +88,7 @@ status: published
 ## 导入顺序
 
 1. `banks`（先导入 `kind: group` 的集团，再导入带 `parent` 的子行，以便解析 relationship）
-2. `reward-programs`（依赖银行）
+2. `reward-programs`（先导入 `kind: group` 的集团体系，再导入带 `parent` 的市场实例；依赖银行）
 3. `sources`
 4. `cards`（依赖银行、积分体系、来源；`bank` 指向子行或独立银行，不要指向集团）
 5. 回写 `cards.relatedCards` 和 `sources.relatedCards`

@@ -2,6 +2,8 @@
 collection: reward-programs
 title: '汇丰墨西哥奖赏'
 slug: hsbc-mexico-rewards
+kind: regional
+parent: hsbc-rewards
 bank: hsbc-mexico
 region: GLOBAL
 currencyName: '奖赏'
@@ -18,6 +20,7 @@ generatedAt: 2026-08-21
 | 字段 | 值 |
 | --- | --- |
 | 所属银行 | [[banks:hsbc-mexico|汇丰墨西哥]](../banks/hsbc-mexico.md) |
+| 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
 | 地区 | GLOBAL |
 
