@@ -1,0 +1,116 @@
+---
+collection: cards
+title: '美国运通金卡'
+shortName: '金卡'
+slug: american-express-gold-card-hk
+country: HK
+bank: american-express
+rewardProgram: amex-membership-rewards-hk
+sourceLevel: C
+status: stub
+_status: draft
+lastVerifiedAt: null
+unionPay: false
+rebateCalculator:
+  enabled: true
+  calculatorId: amexGoldCard
+  issuer: 'American Express Hong Kong'
+conversionCalculator:
+  enabled: false
+  ruleId: null
+tags:
+  - 'American Express'
+  - 'Gold'
+relatedCards:
+  - 'american-express-platinum-card-hk'
+  - 'american-express-platinum-credit-card-hk'
+  - 'american-express-explorer-credit-card-hk'
+  - 'american-express-cathay-pacific-elite-credit-card'
+  - 'american-express-cathay-pacific-credit-card'
+  - 'american-express-blue-cash-credit-card-hk'
+  - 'american-express-gold-credit-card-hk'
+  - 'american-express-green-credit-card-hk'
+sources:
+  - 'american-express-official-terms'
+origin: payload-website-starter
+generatedAt: 2026-08-21
+---
+{{Infobox card}}
+
+# 美国运通金卡
+
+> 美国运通金卡按餐饮 / 生活类别、基本奖赏与 FTF 规则收录。
+
+| 字段 | 值 |
+| --- | --- |
+| 官方名称 | 美国运通金卡 |
+| 简称 | 金卡 |
+| 市场 | 香港 |
+| 发卡银行 | [[banks:american-express|美国运通]](../banks/american-express.md) |
+| 积分体系 | [[reward-programs:amex-membership-rewards-hk|美国运通 Membership Rewards]](../reward-programs/amex-membership-rewards-hk.md) |
+| 来源等级 | [[glossary:source-level|C · 待复核]](../glossary/source-level.md) |
+| 词条状态 | Stub / 待迁入 Payload |
+| 银联双币 | 否 |
+| 基本回赠 | 1 MR / HK$1 |
+| 奖赏单位 | MR Points |
+| 计算器插件 | `amexGoldCard` |
+
+## 概述
+
+**美国运通金卡** 是 [[banks:american-express|美国运通]](../banks/american-express.md) 在香港市场发行的信用卡词条。本页是 Fluxa WikiCard 的 Git 暂存稿：主站 [fluxa.wiki](https://fluxa.wiki) 的正文目前写在 Payload 数据库里，等 `payload-website-starter` 代码稳定后再迁回 Cards collection。
+
+- 发卡银行：[[banks:american-express|美国运通]](../banks/american-express.md)
+- 积分体系：[[reward-programs:amex-membership-rewards-hk|美国运通 Membership Rewards]](../reward-programs/amex-membership-rewards-hk.md)
+- 编辑约定：卡片维基摘要和正文不写进前端源码，见 [[pages:how-to-contribute|词条编写约定]](../pages/how-to-contribute.md)
+
+## 积分与回赠
+
+本词条的奖赏单位关联 [[reward-programs:amex-membership-rewards-hk|美国运通 Membership Rewards]](../reward-programs/amex-membership-rewards-hk.md)。计算器规则仍保留在主仓库源码中；本 Wiki 只记录可迁移的词条事实和官方来源。
+
+
+## 已收录回赠口径
+
+以下规则摘自主仓库计算器数据，**不是**数据库正文，迁移后仍需对照官方条款核验。
+
+| 项目 | 口径 |
+| --- | --- |
+| Membership Rewards 基本积分 | 1 MR / HK$1 |
+
+## 计算器接入
+
+| 类型 | 是否接入 | 标识 |
+| --- | --- | --- |
+| 返利计算器 | 是 | `amexGoldCard` |
+| 兑换计算器 | 否 | `—` |
+
+实际估算请以 [fluxa.wiki 返利计算器](https://fluxa.wiki/rebate-calculator) 和官方条款为准。未核验活动、过期优惠或商户分类差异都可能导致实际到账与估算不同。详见 [[pages:terms|使用条款]](../pages/terms.md)。
+
+## 信息来源
+
+- [[sources:american-express-official-terms|美国运通 官方产品 / 条款]](../sources/american-express-official-terms.md) — https://www.americanexpress.com/en-hk/rewards/membership-rewards/terms
+
+来源等级当前为 **C（待复核）**。等级说明见 [[glossary:source-level|来源等级]](../glossary/source-level.md)。
+
+## 相关词条
+
+- [[cards:american-express-platinum-card-hk|美国运通白金卡]](../cards/american-express-platinum-card-hk.md)
+- [[cards:american-express-platinum-credit-card-hk|美国运通白金信用卡]](../cards/american-express-platinum-credit-card-hk.md)
+- [[cards:american-express-explorer-credit-card-hk|美国运通 Explorer 信用卡]](../cards/american-express-explorer-credit-card-hk.md)
+- [[cards:american-express-cathay-pacific-elite-credit-card|美国运通国泰尊尚信用卡]](../cards/american-express-cathay-pacific-elite-credit-card.md)
+- [[cards:american-express-cathay-pacific-credit-card|美国运通国泰信用卡]](../cards/american-express-cathay-pacific-credit-card.md)
+- [[cards:american-express-blue-cash-credit-card-hk|美国运通 Blue Cash 信用卡]](../cards/american-express-blue-cash-credit-card-hk.md)
+- [[cards:american-express-gold-credit-card-hk|美国运通金信用卡]](../cards/american-express-gold-credit-card-hk.md)
+- [[cards:american-express-green-credit-card-hk|美国运通绿卡]](../cards/american-express-green-credit-card-hk.md)
+
+## 迁移备注
+
+- Payload collection：`cards`
+- slug：`american-express-gold-card-hk`
+- 关系字段：`bank` → `american-express`；`rewardProgram` → `amex-membership-rewards-hk`
+- `_status` 建议先以 `draft` 导入，核验后再 publish
+
+[[Category:信用卡]]
+[[Category:香港信用卡]]
+[[Category:美国运通]]
+[[Category:American Express]]
+[[Category:Gold]]
