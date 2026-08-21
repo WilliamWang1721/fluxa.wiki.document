@@ -48,6 +48,14 @@ status: published
 
 分类页在 `wiki/categories/`。
 
+## 标题层级
+
+- **H1（`#`）**：仅页面标题，全文只出现一次，且等于 YAML `title`。
+- **H2（`##`）**：主要章节（如 概述、收录信用卡、适当性）。
+- **H3（`###`）**：某一 H2 下的子节。
+
+不要把产品名、表格列名或短句单独提成标题；用列表或表格承载即可。
+
 ## Frontmatter
 
 卡片词条顶部 YAML 对齐 `payload-website-starter` 的 Cards collection，详见 [[meta:payload-mapping|字段对照]](payload-mapping.md)。

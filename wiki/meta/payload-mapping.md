@@ -33,6 +33,7 @@ status: published
 | `country` | `country` | 市场，见 `cardCountryOptions` |
 | `bank` | `bank` | relationship → `banks` |
 | `rewardProgram` | `rewardProgram` | relationship → `reward-programs` |
+| `issuance` | `issuance` | `issuing` 正在发行 / `discontinued` 已停发 / `legacy` 存量；未知则省略 |
 | `sourceLevel` | `sourceLevel` | `S/A/B/C/D` |
 | `_status` | `_status` | `draft` / `published` |
 | `lastVerifiedAt` | `lastVerifiedAt` | 最后核验时间 |

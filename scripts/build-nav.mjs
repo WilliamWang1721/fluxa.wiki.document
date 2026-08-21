@@ -21,15 +21,16 @@ const SKIP_FILES = new Set([
 ]);
 
 const FOLDER_LABELS = {
-  banks: '银行 banks',
-  cards: '信用卡 cards',
-  categories: '分类 categories',
-  glossary: '术语 glossary',
-  meta: '元文档 meta',
-  pages: '页面 pages',
-  posts: '文章 posts',
-  'reward-programs': '积分体系 reward-programs',
-  sources: '来源 sources',
+  banks: '银行',
+  cards: '信用卡',
+  categories: '分类',
+  glossary: '术语',
+  meta: '元文档',
+  pages: '页面',
+  posts: '文章',
+  products: '产品',
+  'reward-programs': '积分体系',
+  sources: '来源',
 };
 
 function parseFrontmatter(filePath) {
@@ -55,19 +56,31 @@ function toDocsifyPath(relativePath) {
   return '/wiki/' + relativePath.split(path.sep).join('/');
 }
 
+function folderHeaderLine(dir, prefix, folderName) {
+  const rel = prefix + '_index.md';
+  const indexPath = path.join(dir, '_index.md');
+  const label = FOLDER_LABELS[folderName] || pageLabel(indexPath, folderName);
+  return '- [' + label + '](' + toDocsifyPath(rel) + ')';
+}
+
+function ensureTopLevelIndex(folderName) {
+  const dir = path.join(WIKI, folderName);
+  const indexPath = path.join(dir, '_index.md');
+  if (fs.existsSync(indexPath)) {
+    return;
+  }
+  const label = FOLDER_LABELS[folderName] || folderName;
+  const content = '---\ntitle: \'' + label + '\'\n---\n\n# ' + label + '\n';
+  fs.writeFileSync(indexPath, content, 'utf8');
+  console.log('Created ' + path.relative(ROOT, indexPath));
+}
+
 function listMarkdownFiles(dir, prefix = '') {
   const entries = fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) =>
     a.name.localeCompare(b.name, 'zh-Hans')
   );
 
   const lines = [];
-
-  const indexEntry = entries.find((e) => e.isFile() && e.name === '_index.md');
-  if (indexEntry) {
-    const rel = prefix + '_index.md';
-    const label = pageLabel(path.join(dir, '_index.md'), '索引');
-    lines.push('- [' + label + '](' + toDocsifyPath(rel) + ')');
-  }
 
   for (const entry of entries) {
     if (entry.isDirectory()) {
@@ -76,8 +89,7 @@ function listMarkdownFiles(dir, prefix = '') {
       }
       const subDir = path.join(dir, entry.name);
       const subPrefix = prefix + entry.name + path.sep;
-      const folderLabel = FOLDER_LABELS[entry.name] || entry.name;
-      lines.push('- ' + folderLabel);
+      lines.push(folderHeaderLine(subDir, subPrefix, entry.name));
       for (const subLine of listMarkdownFiles(subDir, subPrefix)) {
         lines.push('  ' + subLine);
       }
@@ -121,8 +133,8 @@ function buildSidebar() {
       continue;
     }
 
-    const folderLabel = FOLDER_LABELS[entry.name] || entry.name;
-    lines.push('- ' + folderLabel);
+    ensureTopLevelIndex(entry.name);
+    lines.push(folderHeaderLine(path.join(WIKI, entry.name), entry.name + path.sep, entry.name));
     for (const subLine of listMarkdownFiles(path.join(WIKI, entry.name), entry.name + path.sep)) {
       lines.push('  ' + subLine);
     }

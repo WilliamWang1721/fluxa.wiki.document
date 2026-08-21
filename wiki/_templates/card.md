@@ -6,6 +6,7 @@ slug: replace-slug
 country: HK
 bank: hang-seng
 rewardProgram: hang-seng-points
+issuance: issuing
 sourceLevel: C
 status: stub
 _status: draft
@@ -39,6 +40,7 @@ origin: manual
 | 市场 | 香港 |
 | 发卡银行 | [[banks:hang-seng|恒生银行]](../banks/hang-seng.md) |
 | 积分体系 | [[reward-programs:hang-seng-points|恒生积分]](../reward-programs/hang-seng-points.md) |
+| 发行状态 | 正在发行 |
 | 来源等级 | [[glossary:source-level|C · 待复核]](../glossary/source-level.md) |
 | 词条状态 | Stub |
 | 银联双币 | 否 |

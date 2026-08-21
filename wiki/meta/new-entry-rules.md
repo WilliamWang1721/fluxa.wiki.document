@@ -48,14 +48,15 @@ status: published
 
 1. **一个 slug 一篇文件。** 文件名必须是 `{slug}.md`，且与 YAML 里的 `slug` 完全一致。
 2. **slug 只用小写 ASCII 和短横线。** `hsbc-red-credit-card` 正确；`HSBC Red`、`汇丰-red`、`hsbc_red` 错误。
-3. **标题只出现一次。** 正文第一个 `#` 标题等于 YAML `title`（不要再套一层不同的名字）。
-4. **中文或含冒号的 YAML 值用单引号。** `title: '汇丰 Red 信用卡'`。
-5. **关系字段只写 slug，不写中文名。** `bank: hsbc-hong-kong`，不是 `bank: 汇丰香港`。子行的 `parent: hsbc` 同样只写集团 slug。
-6. **内部链接写两遍：** Wiki 链（给以后导入）+ Markdown 相对路径（给 GitHub 预览）。
-7. **新建默认是未核验稿。** 信用卡：`sourceLevel: C`，`_status: draft`，`status: stub` 或 `drafting`。
-8. **数字必须能点到来源。** 没有 URL 就不要写具体费率、倍数、迎新额。
-9. **禁止**把 token、账号、未公开活动内部备忘写进词条。
-10. **禁止**为了「刷新列表」再跑 `scripts/generate_wiki.py`。该脚本会删掉 `wiki/cards`、`banks`、`reward-programs`、`sources`、`categories` 后重生成，手写内容会丢。
+3. **标题只出现一次。** 正文第一个 `#` 标题等于 YAML `title`（不要再套一层不同的名字）。H1 仅标题；H2 为章节；H3 为子节。详见 [[meta:syntax|Wiki 语法]](syntax.md#标题层级)。
+4. **只写高价值事实。** 不写「本页是 Git 暂存稿」等元叙述；同一事实不在 YAML、信息框、概述里重复；没有内容的「待核验」章节不要占位。
+5. **中文或含冒号的 YAML 值用单引号。** `title: '汇丰 Red 信用卡'`。
+6. **关系字段只写 slug，不写中文名。** `bank: hsbc-hong-kong`，不是 `bank: 汇丰香港`。子行的 `parent: hsbc` 同样只写集团 slug。
+7. **内部链接写两遍：** Wiki 链（给以后导入）+ Markdown 相对路径（给 GitHub 预览）。
+8. **新建默认是未核验稿。** 信用卡：`sourceLevel: C`，`_status: draft`，`status: stub` 或 `drafting`。
+9. **数字必须能点到来源。** 没有 URL 就不要写具体费率、倍数、迎新额。
+10. **禁止**把 token、账号、未公开活动内部备忘写进词条。
+11. **禁止**为了「刷新列表」再跑 `scripts/generate_wiki.py`。该脚本会删掉 `wiki/cards`、`banks`、`reward-programs`、`sources`、`categories` 后重生成，手写内容会丢。
 
 ### Slug 怎么取
 
@@ -108,6 +109,7 @@ status: published
 | `tags` | 3～6 个短标签，便于检索 |
 | `relatedCards` | 同银行其它卡 slug，建议 3～8 个 |
 | `sources` | 至少一个条款 / 官方产品页 slug |
+| `issuance` | 可选。已知时填 `issuing`（正在发行）、`discontinued`（已停发）或 `legacy`（存量）；未确认则省略，不要猜测 |
 
 `country` 取值（与主仓库 `cardCountryOptions` 一致）：
 

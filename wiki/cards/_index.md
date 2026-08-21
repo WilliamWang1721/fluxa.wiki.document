@@ -130,9 +130,10 @@ status: published
 
 ## 汇丰中国
 
-- [[cards:hsbc-cn-credit-card|汇丰中国信用卡]](./hsbc-cn-credit-card.md)
-- [[cards:hsbc-cn-choice-credit-card|汇丰生活信用卡]](./hsbc-cn-choice-credit-card.md)
-- [[cards:hsbc-cn-sports-vip-credit-card|汇丰运动信用卡尊享版]](./hsbc-cn-sports-vip-credit-card.md)
+- [[cards:hsbc-cn-premier-credit-card|汇丰卓越理财信用卡]](./hsbc-cn-premier-credit-card.md) — 正在发行
+- [[cards:hsbc-cn-credit-card|汇丰中国信用卡]](./hsbc-cn-credit-card.md) — 已停发
+- [[cards:hsbc-cn-choice-credit-card|汇丰生活信用卡]](./hsbc-cn-choice-credit-card.md) — 已停发
+- [[cards:hsbc-cn-sports-vip-credit-card|汇丰运动信用卡尊享版]](./hsbc-cn-sports-vip-credit-card.md) — 已停发
 
 ## 汇丰乌拉圭
 

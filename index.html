@@ -6,6 +6,7 @@
   <meta name="description" content="Fluxa WikiCard — 卡片、银行、礼遇与来源词条" />
   <title>Fluxa WikiCard</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
   <style>
     :root {
       --theme-color: #1a56db;
@@ -14,8 +15,24 @@
     .app-name-link img { display: none; }
     .markdown-section { max-width: 52rem; }
     .markdown-section table { display: table; width: 100%; }
-    .sidebar-nav > ul > li > p { font-weight: 600; margin: 0.75rem 0 0.25rem; }
-    .sidebar-toggle { top: 0; }
+    .sidebar {
+      z-index: 20;
+      pointer-events: auto;
+    }
+    .sidebar-nav a {
+      color: var(--theme-color);
+      cursor: pointer;
+    }
+    .sidebar-nav a:hover {
+      text-decoration: underline;
+    }
+    .sidebar-nav > ul > li > p {
+      font-weight: 600;
+      margin: 0.75rem 0 0.25rem;
+    }
+    .sidebar-nav > ul > li > p > a {
+      color: var(--theme-color);
+    }
   </style>
 </head>
 <body>
@@ -26,6 +43,7 @@
       repo: 'WilliamWang1721/fluxa.wiki.document',
       homepage: 'wiki/Home.md',
       loadSidebar: 'wiki/_Sidebar.generated.md',
+      sidebarDisplayLevel: 1,
       relativePath: true,
       auto2heading: true,
       maxLevel: 4,
