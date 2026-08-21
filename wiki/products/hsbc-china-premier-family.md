@@ -78,6 +78,7 @@ bank: hsbc-china
 
 ## 相关词条
 
+- [[products:hsbc-premier|HSBC Premier]](../products/hsbc-premier.md)
 - [[banks:hsbc-china|HSBC CN]](../banks/hsbc-china.md)
 - [[glossary:minor-account-opening|未成年开户]](../glossary/minor-account-opening.md)
 

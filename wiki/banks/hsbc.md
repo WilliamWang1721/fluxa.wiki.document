@@ -67,6 +67,10 @@ origin: manual
 
 - [[banks:hsbc-united-states|HSBC US]](./hsbc-united-states.md)
 
+## 客户经理等级
+
+[[products:hsbc-premier|HSBC Premier]](../products/hsbc-premier.md) 是集团统一的客户经理等级词条。
+
 ## 收录信用卡
 
 集团词条不直接收录信用卡。要找卡，先进入上表对应市场子行。
