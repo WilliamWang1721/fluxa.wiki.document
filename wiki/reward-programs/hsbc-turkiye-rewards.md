@@ -5,7 +5,7 @@ slug: hsbc-turkiye-rewards
 kind: regional
 parent: hsbc-rewards
 bank: hsbc-turkiye
-region: GLOBAL
+region: TR
 currencyName: '奖赏'
 status: stub
 generatedAt: 2026-08-21
@@ -22,7 +22,7 @@ generatedAt: 2026-08-21
 | 所属银行 | [[banks:hsbc-turkiye|汇丰土耳其]](../banks/hsbc-turkiye.md) |
 | 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
-| 地区 | GLOBAL |
+| 地区 | TR |
 
 ## 使用该体系的信用卡
 

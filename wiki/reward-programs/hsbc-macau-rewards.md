@@ -5,7 +5,7 @@ slug: hsbc-macau-rewards
 kind: regional
 parent: hsbc-rewards
 bank: hsbc-macau
-region: HK
+region: MO
 currencyName: '奖赏'
 status: stub
 generatedAt: 2026-08-21
@@ -22,7 +22,7 @@ generatedAt: 2026-08-21
 | 所属银行 | [[banks:hsbc-macau|汇丰澳门]](../banks/hsbc-macau.md) |
 | 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
-| 地区 | HK |
+| 地区 | MO |
 
 ## 使用该体系的信用卡
 

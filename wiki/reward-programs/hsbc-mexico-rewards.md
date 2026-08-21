@@ -5,7 +5,7 @@ slug: hsbc-mexico-rewards
 kind: regional
 parent: hsbc-rewards
 bank: hsbc-mexico
-region: GLOBAL
+region: MX
 currencyName: '奖赏'
 status: stub
 generatedAt: 2026-08-21
@@ -22,7 +22,7 @@ generatedAt: 2026-08-21
 | 所属银行 | [[banks:hsbc-mexico|汇丰墨西哥]](../banks/hsbc-mexico.md) |
 | 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
-| 地区 | GLOBAL |
+| 地区 | MX |
 
 ## 使用该体系的信用卡
 

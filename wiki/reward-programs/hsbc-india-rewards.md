@@ -5,7 +5,7 @@ slug: hsbc-india-rewards
 kind: regional
 parent: hsbc-rewards
 bank: hsbc-india
-region: GLOBAL
+region: IN
 currencyName: '奖赏'
 status: stub
 generatedAt: 2026-08-21
@@ -22,7 +22,7 @@ generatedAt: 2026-08-21
 | 所属银行 | [[banks:hsbc-india|汇丰印度]](../banks/hsbc-india.md) |
 | 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
-| 地区 | GLOBAL |
+| 地区 | IN |
 
 ## 使用该体系的信用卡
 

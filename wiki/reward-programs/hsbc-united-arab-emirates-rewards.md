@@ -5,7 +5,7 @@ slug: hsbc-united-arab-emirates-rewards
 kind: regional
 parent: hsbc-rewards
 bank: hsbc-united-arab-emirates
-region: GLOBAL
+region: AE
 currencyName: '奖赏'
 status: stub
 generatedAt: 2026-08-21
@@ -22,7 +22,7 @@ generatedAt: 2026-08-21
 | 所属银行 | [[banks:hsbc-united-arab-emirates|汇丰阿联酋]](../banks/hsbc-united-arab-emirates.md) |
 | 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
-| 地区 | GLOBAL |
+| 地区 | AE |
 
 ## 使用该体系的信用卡
 

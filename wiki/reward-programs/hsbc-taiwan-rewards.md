@@ -5,7 +5,7 @@ slug: hsbc-taiwan-rewards
 kind: regional
 parent: hsbc-rewards
 bank: hsbc-taiwan
-region: GLOBAL
+region: TW
 currencyName: '奖赏'
 status: stub
 generatedAt: 2026-08-21
@@ -22,7 +22,7 @@ generatedAt: 2026-08-21
 | 所属银行 | [[banks:hsbc-taiwan|汇丰台湾]](../banks/hsbc-taiwan.md) |
 | 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
-| 地区 | GLOBAL |
+| 地区 | TW |
 
 ## 使用该体系的信用卡
 

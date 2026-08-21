@@ -5,7 +5,7 @@ slug: hsbc-vietnam-rewards
 kind: regional
 parent: hsbc-rewards
 bank: hsbc-vietnam
-region: GLOBAL
+region: VN
 currencyName: '奖赏'
 status: stub
 generatedAt: 2026-08-21
@@ -22,7 +22,7 @@ generatedAt: 2026-08-21
 | 所属银行 | [[banks:hsbc-vietnam|汇丰越南]](../banks/hsbc-vietnam.md) |
 | 所属体系 | [[reward-programs:hsbc-rewards|HSBC]](./hsbc-rewards.md) |
 | 积分货币 | 奖赏 |
-| 地区 | GLOBAL |
+| 地区 | VN |
 
 ## 使用该体系的信用卡
 
