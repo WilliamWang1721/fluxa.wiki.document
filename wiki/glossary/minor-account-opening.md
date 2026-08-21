@@ -53,8 +53,9 @@ status: published
 | [[banks:cmb|招商银行]](../banks/cmb.md)（内地） | 可使用 | 可绑定使用 | 具备 | 可使用 |
 | [[banks:icbc-china|中国工商银行]](../banks/icbc-china.md) | 可使用 | 可绑定使用 | 具备 | 可使用 |
 | [[banks:citic-china|中信银行]](../banks/citic-china.md)（内地） | 不可使用 | 不可绑定 | 具备 | 本站未记录 |
+| [[banks:psbc-china|中国邮政储蓄银行]](../banks/psbc-china.md)（邮储银行） | 可使用 | 可使用 | 具备 | 本站未记录 |
 
-**Apple Pay 与年龄**：因系统强制限定，**13 周岁以下**未成年儿童**不可绑定 Apple Pay**；暂时没有解决方案。具体原因本站未从 Apple/银行官方页核到，只记录为系统限制。上表中工商银行、招商银行「可使用」指在**满足系统年龄等条件**时；中信银行 Apple Pay 本站未记录。
+**Apple Pay 与年龄**：因系统强制限定，**13 周岁以下**未成年儿童**不可绑定 Apple Pay**；暂时没有解决方案。具体原因本站未从 Apple/银行官方页核到，只记录为系统限制。上表中工商银行、招商银行「可使用」指在**满足系统年龄等条件**时；中信银行、邮储银行 Apple Pay 本站未记录。
 
 ### 已核到的官方 / 准官方（招商银行）
 
@@ -96,6 +97,7 @@ status: published
 - [[banks:hsbc-china|HSBC CN]](../banks/hsbc-china.md)
 - [[banks:hsbc-hong-kong|HSBC HK]](../banks/hsbc-hong-kong.md)
 - [[banks:cmb|招商银行]](../banks/cmb.md)
+- [[banks:psbc-china|中国邮政储蓄银行]](../banks/psbc-china.md)
 - [[glossary:witnessed-account-opening|见证开户]](./witnessed-account-opening.md)
 - [[glossary:_index|术语索引]](./_index.md)
 
