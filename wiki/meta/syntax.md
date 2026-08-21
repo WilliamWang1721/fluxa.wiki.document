@@ -52,6 +52,8 @@ status: published
 
 卡片词条顶部 YAML 对齐 `payload-website-starter` 的 Cards collection，详见 [[meta:payload-mapping|字段对照]](payload-mapping.md)。
 
+**新增一篇词条时不要只看本页。** 类型选择、依赖顺序、回写索引见 [[meta:new-entry-rules|词条新建规则]](new-entry-rules.md)。
+
 ## 不要写进词条的内容
 
 主仓库明确约定：

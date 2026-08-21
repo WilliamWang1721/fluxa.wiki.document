@@ -36,7 +36,15 @@ status: published
 
 ## 编辑入口
 
-- [[pages:how-to-contribute|词条编写约定]](pages/how-to-contribute.md)
+新增或完善词条，先读这一份：
+
+- [[meta:new-entry-rules|词条新建规则]](meta/new-entry-rules.md)（按类型：信用卡 / 银行 / 积分 / 来源）
+- [空白模板](_templates/README.md)
+- 仓库 README：[项目根目录 README](https://github.com/WilliamWang1721/fluxa.wiki.document/blob/main/README.md)
+
+其它：
+
+- [[pages:how-to-contribute|词条编写约定（短版）]](pages/how-to-contribute.md)
 - [[meta:syntax|Wiki 语法]](meta/syntax.md)
 - [[meta:payload-mapping|Payload 字段对照]](meta/payload-mapping.md)
 - [[meta:migration|迁回主仓库]](meta/migration.md)

@@ -4,6 +4,10 @@
 This is a staging wiki: article bodies live here as Markdown + wiki syntax so they
 can later be imported into payload-website-starter collections (cards, banks,
 reward-programs, sources, pages, posts).
+
+Do not re-run this script after hand-editing wiki/cards, banks, reward-programs,
+sources, or categories — those directories are deleted and regenerated.
+See wiki/meta/new-entry-rules.md.
 """
 
 from __future__ import annotations

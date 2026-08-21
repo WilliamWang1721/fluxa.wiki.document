@@ -10,7 +10,9 @@
 ## 指南
 
 - [[pages:about|关于]](pages/about.md)
+- [[meta:new-entry-rules|词条新建规则]](meta/new-entry-rules.md)
 - [[pages:how-to-contribute|如何编写词条]](pages/how-to-contribute.md)
+- [空白模板](_templates/README.md)
 - [[posts:how-to-read-a-card-entry|如何读一条卡片]](posts/how-to-read-a-card-entry.md)
 - [[posts:calculator-vs-wiki|计算器与词条]](posts/calculator-vs-wiki.md)
 - [[glossary:source-level|来源等级]](glossary/source-level.md)
@@ -22,6 +24,7 @@
 
 ## 迁移
 
+- [[meta:new-entry-rules|词条新建规则]](meta/new-entry-rules.md)
 - [[meta:syntax|Wiki 语法]](meta/syntax.md)
 - [[meta:payload-mapping|字段对照]](meta/payload-mapping.md)
 - [[meta:migration|迁回 Payload]](meta/migration.md)
