@@ -11,6 +11,7 @@ status: published
 - [[glossary:rewardcash|RewardCash]](rewardcash.md)
 - [[glossary:cash-dollars|Cash Dollars]](cash-dollars.md)
 - [[glossary:ftf|外币交易费（FTF）]](ftf.md)
+- [[glossary:witnessed-account-opening|见证开户]](./witnessed-account-opening.md)
 
 [[Category:术语]]
 [[Category:索引]]
