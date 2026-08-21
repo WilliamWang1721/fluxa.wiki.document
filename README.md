@@ -60,7 +60,7 @@ wiki/
   _Sidebar.md             侧栏
   _templates/             新建时复制的空白稿
   cards/                  信用卡          → Payload cards
-  banks/                  银行            → banks
+  banks/                  银行（含集团 / 子行）→ banks
   reward-programs/        积分 / 礼遇     → reward-programs
   sources/                官方条款与来源  → sources
   pages/                  指南与政策      → pages

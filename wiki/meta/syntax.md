@@ -52,6 +52,13 @@ status: published
 
 卡片词条顶部 YAML 对齐 `payload-website-starter` 的 Cards collection，详见 [[meta:payload-mapping|字段对照]](payload-mapping.md)。
 
+关系字段只写 slug，不写中文名：`bank`、`rewardProgram`、`parent` 都是如此。银行额外约定：
+
+| 字段 | 写法 |
+| --- | --- |
+| `kind` | 集团 `group`；子行 `subsidiary`；独立银行不写 |
+| `parent` | 仅子行：集团 slug，如 `parent: hsbc`。Payload 侧是 relationship → `banks` |
+
 **新增一篇词条时不要只看本页。** 类型选择、依赖顺序、回写索引见 [[meta:new-entry-rules|词条新建规则]](new-entry-rules.md)。
 
 ## 不要写进词条的内容
