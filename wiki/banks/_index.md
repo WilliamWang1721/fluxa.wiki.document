@@ -64,6 +64,9 @@ status: published
 
 ### CN
 
+- [[banks:cmb|招商银行]](./cmb.md)
+- [[banks:icbc-china|中国工商银行]](./icbc-china.md)
+- [[banks:citic-china|中信银行]](./citic-china.md)
 - [[banks:hsbc-china|HSBC CN]](./hsbc-china.md)（[[banks:hsbc|HSBC]](./hsbc.md) 子行）
 
 ### GLOBAL

@@ -16,6 +16,7 @@ status: published
 | 你要写的内容 | 写到 | Payload | 文件 |
 | --- | --- | --- | --- |
 | 一张具体的信用卡 / 签账卡 | 信用卡 | `cards` | `wiki/cards/{slug}.md` |
+| 银行产品（非信用卡） | （暂无；导入时当 posts 或待建） | `posts` | `wiki/products/{slug}.md`（须有 `bank` slug） |
 | 一家发卡机构、银行集团或市场子行 | 银行 | `banks` | `wiki/banks/{slug}.md` |
 | RewardCash、Cash Dollars、Membership Rewards 等 | 积分体系 | `reward-programs` | `wiki/reward-programs/{slug}.md` |
 | 官方产品页、条款、公告 URL | 来源 | `sources` | `wiki/sources/{slug}.md` |

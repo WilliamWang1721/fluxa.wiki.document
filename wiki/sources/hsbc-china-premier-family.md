@@ -32,6 +32,7 @@ Disclaimer：部分礼遇不适用于 Junior Account holders。
 
 ## 关联
 
+- [[products:hsbc-china-premier-family|汇丰卓越理财家庭金融服务]](../products/hsbc-china-premier-family.md)
 - [[banks:hsbc-china|HSBC CN]](../banks/hsbc-china.md)
 - [[sources:hsbc-china-premier-junior-account-terms|HSBC CN 汇丰卓越理财青少年成长账户条款]](../sources/hsbc-china-premier-junior-account-terms.md)
 - [[sources:hsbc-china-premier-welcome-pack|HSBC CN 汇丰卓越理财欢迎手册]](../sources/hsbc-china-premier-welcome-pack.md)

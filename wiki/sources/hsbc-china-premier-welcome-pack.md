@@ -33,6 +33,7 @@ origin: manual
 
 ## 关联
 
+- [[products:hsbc-china-premier-family|汇丰卓越理财家庭金融服务]](../products/hsbc-china-premier-family.md)
 - [[sources:hsbc-china-premier-family|HSBC CN 汇丰卓越理财家庭金融服务]](../sources/hsbc-china-premier-family.md)
 - [[glossary:minor-account-opening|未成年开户]](../glossary/minor-account-opening.md)
 

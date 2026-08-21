@@ -33,12 +33,7 @@ generatedAt: 2026-08-21
 
 ## 汇丰卓越理财家庭金融服务
 
-官方名称：**汇丰卓越理财家庭金融服务**（**HSBC Premier Family**）。详见 [[sources:hsbc-china-premier-family|官方家庭页]](../sources/hsbc-china-premier-family.md) 与 [[sources:hsbc-china-premier-welcome-pack|欢迎手册]](../sources/hsbc-china-premier-welcome-pack.md)。
-
-- 须已是 **汇丰卓越理财**（**HSBC Premier**）客户方可申请（[[sources:hsbc-china-premier|汇丰卓越理财]](../sources/hsbc-china-premier.md)）。
-- 可为 **14–18 岁**子女申请 **汇丰卓越理财青少年成长账户**（**HSBC Premier Junior Account**）；须**临柜**开立，不能只走线上预约。流程与材料见 [[glossary:minor-account-opening|未成年开户]](../glossary/minor-account-opening.md)。
-- 同一家庭金融服务下，家庭合计维持 **Total Relationship Balance** 人民币 **50 万**（或等值外币）可免卓越理财月费（[[sources:hsbc-china-premier-family|官方家庭页]](../sources/hsbc-china-premier-family.md)）。具体计算以官方 **Total Relationship Balance** 定义及现行价目为准。
-- 监护人通过 **汇丰中国手机银行** 的 **家庭金融服务** / **Family View** 查看子女账户、设置借记卡取现/消费/第三方支付限额（欢迎手册与 [[sources:hsbc-china-premier-junior-account-terms|青少年成长账户条款]](../sources/hsbc-china-premier-junior-account-terms.md)）。
+[[products:hsbc-china-premier-family|汇丰卓越理财家庭金融服务]](../products/hsbc-china-premier-family.md)（**HSBC Premier Family**）：须已是 [[sources:hsbc-china-premier|汇丰卓越理财]](../sources/hsbc-china-premier.md) 客户；含 **Family View**、环球转账亲情速汇，及 **14–18 岁** [[glossary:minor-account-opening|青少年成长账户]](../glossary/minor-account-opening.md)（须临柜）。家庭 **人均月内日均余额 ≥ 人民币 50 万**可免月费（[[sources:hsbc-china-premier-family|官方家庭页]](../sources/hsbc-china-premier-family.md)）。产品定义与来源见产品页，此处不重复展开。
 
 ## 汇丰卓越理财与适当性
 
