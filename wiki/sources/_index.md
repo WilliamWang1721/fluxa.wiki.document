@@ -71,4 +71,12 @@ status: published
 - [[sources:american-express-official-terms-32|美国运通 官方产品 / 条款]](./american-express-official-terms-32.md)
 - [[sources:american-express-official-terms-33|美国运通 官方产品 / 条款]](./american-express-official-terms-33.md)
 
+## 新闻 / 官方说明
+
+- [[sources:hsbc-china-gba-witness-press-2025|汇丰中国 2025-01-20 香港居民代理见证开立内地 II 类户新闻稿]](./hsbc-china-gba-witness-press-2025.md)
+- [[sources:hsbc-china-gba-type-ii-agreement|汇丰中国大湾区人民币 II 类结算账户服务协议]](./hsbc-china-gba-type-ii-agreement.md)
+- [[sources:hsbc-hong-kong-open-account-international|汇丰香港 如何开立香港户口]](./hsbc-hong-kong-open-account-international.md)
+- [[sources:hsbc-china-gba-account-connect|汇丰中国 大湾区企业账户通]](./hsbc-china-gba-account-connect.md)
+- [[sources:boc-hong-kong-witnessed-account-opening|中银香港 见证开户服务]](./boc-hong-kong-witnessed-account-opening.md)
+
 [[Category:索引]]
