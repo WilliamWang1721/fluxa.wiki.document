@@ -5,7 +5,7 @@
 | 模板 | 用于 |
 | --- | --- |
 | [card.md](card.md) | 信用卡 |
-| [bank.md](bank.md) | 银行 |
+| [bank.md](bank.md) | 银行（含集团 / 子行；独立银行不填 `kind` / `parent`） |
 | [reward-program.md](reward-program.md) | 积分体系 |
 | [source.md](source.md) | 核验来源 |
 | [page.md](page.md) | 指南 / 政策 |

@@ -16,7 +16,7 @@ status: published
 | 你要写的内容 | 写到 | Payload | 文件 |
 | --- | --- | --- | --- |
 | 一张具体的信用卡 / 签账卡 | 信用卡 | `cards` | `wiki/cards/{slug}.md` |
-| 一家发卡机构 | 银行 | `banks` | `wiki/banks/{slug}.md` |
+| 一家发卡机构、银行集团或市场子行 | 银行 | `banks` | `wiki/banks/{slug}.md` |
 | RewardCash、Cash Dollars、Membership Rewards 等 | 积分体系 | `reward-programs` | `wiki/reward-programs/{slug}.md` |
 | 官方产品页、条款、公告 URL | 来源 | `sources` | `wiki/sources/{slug}.md` |
 | 关于、政策、编写约定 | 指南页 | `pages` | `wiki/pages/{slug}.md` |
@@ -39,6 +39,7 @@ status: published
 ```
 
 - 银行已存在：从「来源 / 信用卡」开始。
+- 若发卡机构属于集团：先建集团词条（`kind: group`），再建子行（`kind: subsidiary`，`parent` 指向集团 slug）。卡片挂子行，不挂集团。
 - 积分计划是新的（例如新开的联名里数计划）：先建 `reward-programs`，再写卡。
 - 指南、术语、政策没有这个依赖，可单独新增。
 
@@ -48,7 +49,7 @@ status: published
 2. **slug 只用小写 ASCII 和短横线。** `hsbc-red-credit-card` 正确；`HSBC Red`、`汇丰-red`、`hsbc_red` 错误。
 3. **标题只出现一次。** 正文第一个 `#` 标题等于 YAML `title`（不要再套一层不同的名字）。
 4. **中文或含冒号的 YAML 值用单引号。** `title: '汇丰 Red 信用卡'`。
-5. **关系字段只写 slug，不写中文名。** `bank: hsbc-hong-kong`，不是 `bank: 汇丰香港`。
+5. **关系字段只写 slug，不写中文名。** `bank: hsbc-hong-kong`，不是 `bank: 汇丰香港`。子行的 `parent: hsbc` 同样只写集团 slug。
 6. **内部链接写两遍：** Wiki 链（给以后导入）+ Markdown 相对路径（给 GitHub 预览）。
 7. **新建默认是未核验稿。** 信用卡：`sourceLevel: C`，`_status: draft`，`status: stub` 或 `drafting`。
 8. **数字必须能点到来源。** 没有 URL 就不要写具体费率、倍数、迎新额。
@@ -60,7 +61,9 @@ status: published
 | 类型 | 规则 | 好例子 | 坏例子 |
 | --- | --- | --- | --- |
 | 信用卡 | `{机构}-{产品}`，机构与银行 slug 前缀一致 | `hsbc-red-credit-card` | `red`、`汇丰red` |
-| 银行 | 机构常用英文名，地区写进 slug | `hsbc-hong-kong`、`hang-seng` | `hsbc`（分不清市场） |
+| 银行（独立） | 机构常用英文名；单市场可带地区 | `hang-seng`、`bank-of-east-asia` | 用集团 slug 当某一市场的发卡行 |
+| 银行（集团） | 品牌英文短名，不写市场 | `hsbc` | `hsbc-group`、`HSBC` |
+| 银行（子行） | `{集团slug}-{市场}` | `hsbc-hong-kong`、`hsbc-china` | `hsbc`（分不清市场；集团页才用这个 slug） |
 | 积分体系 | `{银行slug}-{货币名}` | `hsbc-rewardcash` | `rc`、`points` |
 | 来源 | `{银行slug}-official-terms`；一张卡独有条款则 `{卡slug}-terms` | `hang-seng-official-terms` | `source-1` |
 | 其它 | 英文短横线，与主站 URL 一致 | `how-to-contribute` | `如何编写` |
@@ -138,23 +141,36 @@ status: published
 
 ## 5. 银行 `banks`
 
-**何时新建：** 出现本仓没有的发卡机构。一张新卡挂到已有银行时，**不要**新建银行。
+**何时新建：** 出现本仓没有的发卡机构。一张新卡挂到已有银行时，**不要**新建银行。若该行属于某集团：先有集团词条，再写子行；信用卡仍挂子行，不挂集团页。
 
 ### 必填
 
 | 字段 | 规则 |
 | --- | --- |
 | `collection` | `banks` |
-| `title` | 对外中文名，如 `汇丰香港` |
-| `slug` | 文件名 |
-| `region` | `HK` `CN` `SG` `US` `GLOBAL` 之一 |
-| `website` | 信用卡产品列表页，优先官方 |
+| `title` | 对外中文名，如 `汇丰香港`；集团可用 `汇丰 / HSBC` |
+| `slug` | 文件名。集团用不带市场的品牌短名；子行 `{集团slug}-{市场}` |
+| `region` | `HK` `CN` `SG` `US` `GLOBAL` 之一；集团常用 `GLOBAL` |
+| `website` | 信用卡产品列表页，优先官方；集团用集团官网 |
 
-正文用 `{{Infobox bank}}`，必须有「收录信用卡」（新银行可先空列表）和「别名」（主仓库 issuer 字符串，如 `Hang Seng Bank`）。
+### 选填（集团 / 子行；独立银行不要填）
 
-分类：`[[Category:银行]]` 和地区分类。
+| 字段 | 规则 |
+| --- | --- |
+| `kind` | 集团 `group`；子行 `subsidiary`。独立银行**省略**，缺省即普通银行，旧词条不用改。取值只有这两个。 |
+| `parent` | **仅子行。** 值为集团 slug，如 `parent: hsbc`。字段名必须是 `parent`，不要用 `group`。集团页和独立银行都不要填。导入 Payload 时变成 relationship → `banks`。 |
 
-回写：`wiki/banks/_index.md`。若该行同时会发卡，接着建积分体系。
+独立银行（不属于任何集团）保持合法：不写 `kind` / `parent` 即可。不要强迫每家银行都填集团。
+
+正文用 `{{Infobox bank}}`。
+
+- **独立银行 / 子行：** 必须有「收录信用卡」（新银行可先空列表）和「别名」（主仓库 issuer 字符串，如 `Hang Seng Bank`）。子行信息框加「所属集团」链接。
+- **集团：** 必须有「子行」列表（只挂本仓已有页面，不编造市场）。集团页不直接挂信用卡。
+- **别名：** 裸品牌名（`HSBC` / `汇丰`）只写在集团页。子行用带地区的写法（`HSBC HK`），避免和集团抢同一个 issuer 字符串。
+
+分类：`[[Category:银行]]` 和地区分类；集团与子行可再加集团分类（如 `[[Category:汇丰]]`）。
+
+回写：`wiki/banks/_index.md`——集团要出现在「按集团」节并展开子行；独立银行仍按地区列出。若该行同时会发卡，接着建积分体系。
 
 模板：[`wiki/_templates/bank.md`](../_templates/bank.md)
 

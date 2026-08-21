@@ -3,6 +3,8 @@ collection: banks
 title: '汇丰斯里兰卡'
 slug: hsbc-sri-lanka
 region: GLOBAL
+kind: subsidiary
+parent: hsbc
 website: 'https://www.hsbc.lk/credit-cards/products/'
 status: stub
 generatedAt: 2026-08-21
@@ -12,11 +14,13 @@ generatedAt: 2026-08-21
 
 # 汇丰斯里兰卡
 
-**汇丰斯里兰卡** 是 Fluxa WikiCard 的银行词条。卡片必须通过 `bank` 关系挂到本页，前台筛选和详情页都读这个关系，不要再靠标题模糊匹配。
+**汇丰斯里兰卡** 是 Fluxa WikiCard 的银行词条。卡片必须通过 `bank` 关系挂到本页，前台筛选和详情页都读这个关系，不要再靠标题模糊匹配。本页是 [[banks:hsbc|汇丰 / HSBC]](./hsbc.md) 集团下的市场子行。
 
 | 字段 | 值 |
 | --- | --- |
 | 地区 | GLOBAL · 全球 |
+| 类型 | 子行 |
+| 所属集团 | [[banks:hsbc|汇丰 / HSBC]](./hsbc.md) |
 | 官网 | https://www.hsbc.lk/credit-cards/products/ |
 | 积分体系 | [[reward-programs:hsbc-sri-lanka-rewards|汇丰斯里兰卡奖赏]](../reward-programs/hsbc-sri-lanka-rewards.md) |
 | 词条数 | 4 |
@@ -38,6 +42,9 @@ generatedAt: 2026-08-21
 
 - Payload collection：`banks`
 - slug：`hsbc-sri-lanka`
+- kind：`subsidiary`
+- parent：`hsbc`
 
 [[Category:银行]]
+[[Category:汇丰]]
 [[Category:全球]]

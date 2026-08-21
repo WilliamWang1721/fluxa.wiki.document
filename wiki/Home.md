@@ -14,7 +14,7 @@ status: published
 ## 从一个词条开始
 
 - 信用卡：[[cards:_index|信用卡词条]](cards/_index.md)
-- 银行：[[banks:_index|银行词条]](banks/_index.md)
+- 银行：[[banks:_index|银行词条]](banks/_index.md)（可按集团展开子行）
 - 积分体系：[[reward-programs:_index|礼遇 / 积分体系]](reward-programs/_index.md)
 - 核验来源：[[sources:_index|来源]](sources/_index.md)
 - 分类：[[categories:信用卡|分类：信用卡]](categories/信用卡.md)

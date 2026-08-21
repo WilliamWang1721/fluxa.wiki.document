@@ -3,6 +3,8 @@ collection: banks
 title: '汇丰马来西亚'
 slug: hsbc-malaysia
 region: GLOBAL
+kind: subsidiary
+parent: hsbc
 website: 'https://www.hsbc.com.my/credit-cards/products/'
 status: stub
 generatedAt: 2026-08-21
@@ -12,11 +14,13 @@ generatedAt: 2026-08-21
 
 # 汇丰马来西亚
 
-**汇丰马来西亚** 是 Fluxa WikiCard 的银行词条。卡片必须通过 `bank` 关系挂到本页，前台筛选和详情页都读这个关系，不要再靠标题模糊匹配。
+**汇丰马来西亚** 是 Fluxa WikiCard 的银行词条。卡片必须通过 `bank` 关系挂到本页，前台筛选和详情页都读这个关系，不要再靠标题模糊匹配。本页是 [[banks:hsbc|汇丰 / HSBC]](./hsbc.md) 集团下的市场子行。
 
 | 字段 | 值 |
 | --- | --- |
 | 地区 | GLOBAL · 全球 |
+| 类型 | 子行 |
+| 所属集团 | [[banks:hsbc|汇丰 / HSBC]](./hsbc.md) |
 | 官网 | https://www.hsbc.com.my/credit-cards/products/ |
 | 积分体系 | [[reward-programs:hsbc-malaysia-rewards|汇丰马来西亚奖赏]](../reward-programs/hsbc-malaysia-rewards.md) |
 | 词条数 | 9 |
@@ -43,6 +47,9 @@ generatedAt: 2026-08-21
 
 - Payload collection：`banks`
 - slug：`hsbc-malaysia`
+- kind：`subsidiary`
+- parent：`hsbc`
 
 [[Category:银行]]
+[[Category:汇丰]]
 [[Category:全球]]
