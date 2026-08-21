@@ -2,6 +2,8 @@
 
 [Fluxa WikiCard](https://fluxa.wiki) 的 **词条暂存仓库**。
 
+**在线阅读（GitHub Pages）：** https://williamwang1721.github.io/fluxa.wiki.document/ — 启用与排错见 [docs/github-pages.md](docs/github-pages.md)。
+
 主站 `payload-website-starter` 还在开发，卡片摘要和正文按设计存在数据库里。这个仓库用 Markdown + Wiki 语法，把词条、银行、积分体系和来源先写在 Git 里，等主站就绪再迁回 Payload。
 
 姊妹产品：[Fluxa Map](https://github.com/WilliamWang1721/Fluxa-Map)。

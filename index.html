@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fluxa WikiCard — 卡片、银行、礼遇与来源词条" />
+  <title>Fluxa WikiCard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    :root {
+      --theme-color: #1a56db;
+      --sidebar-width: 18rem;
+    }
+    .app-name-link img { display: none; }
+    .markdown-section { max-width: 52rem; }
+    .markdown-section table { display: table; width: 100%; }
+    .sidebar-nav > ul > li > p { font-weight: 600; margin: 0.75rem 0 0.25rem; }
+    .sidebar-toggle { top: 0; }
+  </style>
+</head>
+<body>
+  <div id="app">加载中…</div>
+  <script>
+    window.$docsify = {
+      name: 'Fluxa WikiCard',
+      repo: 'WilliamWang1721/fluxa.wiki.document',
+      homepage: 'wiki/Home.md',
+      loadSidebar: 'wiki/_Sidebar.generated.md',
+      relativePath: true,
+      auto2heading: true,
+      maxLevel: 4,
+      subMaxLevel: 2,
+      basePath: location.pathname.replace(/\/(?:index\.html)?$/, '/'),
+      alias: {
+        '/.*/_sidebar.md': '/wiki/_Sidebar.generated.md',
+        '/': '/wiki/Home.md',
+      },
+      search: {
+        paths: 'auto',
+        placeholder: '搜索词条…',
+        noData: '没有匹配结果',
+        depth: 4,
+      },
+      pagination: {
+        previousText: '上一页',
+        nextText: '下一页',
+      },
+      plugins: [
+        function wikiPreprocessor(hook) {
+          let pageTitle = null;
+
+          hook.beforeEach(function (content) {
+            pageTitle = null;
+
+            const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+            if (fmMatch) {
+              const titleMatch = fmMatch[1].match(/^title:\s*(['"]?)(.+?)\1\s*$/m);
+              if (titleMatch) {
+                pageTitle = titleMatch[2];
+              }
+              content = content.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
+            }
+
+            content = content.replace(/\{\{Infobox[^}]+\}\}\s*\n?/g, '');
+
+            content = content.replace(
+              /\[\[([\s\S]*?)\]\]\(([^)]+)\)/g,
+              function (_, inner, href) {
+                const pipe = inner.lastIndexOf('|');
+                let label = pipe >= 0 ? inner.slice(pipe + 1) : inner;
+                label = label.replace(/\\([\\|])/g, '$1');
+                if (pipe < 0 && inner.includes(':')) {
+                  label = inner.split(':').pop();
+                }
+                return '[' + label + '](' + href + ')';
+              }
+            );
+
+            content = content.replace(
+              /\[\[Category:([^\]]+)\]\]/g,
+              '[[分类：$1]](/wiki/categories/$1.md)'
+            );
+
+            return content;
+          });
+
+          hook.doneEach(function () {
+            if (pageTitle) {
+              document.title = pageTitle + ' · Fluxa WikiCard';
+            }
+          });
+        },
+      ],
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+</body>
+</html>
