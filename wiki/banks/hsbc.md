@@ -1,6 +1,6 @@
 ---
 collection: banks
-title: '汇丰 / HSBC'
+title: 'HSBC'
 slug: hsbc
 kind: group
 region: GLOBAL
@@ -11,9 +11,9 @@ origin: manual
 
 {{Infobox bank}}
 
-# 汇丰 / HSBC
+# HSBC
 
-**汇丰 / HSBC** 是 Fluxa WikiCard 的银行集团词条。本页不直接挂信用卡；各市场发卡机构是子行，卡片通过 `bank` 关系挂到对应子行。检索路径是「集团 → 子行 → 信用卡」。
+**HSBC** 是 Fluxa WikiCard 的银行集团词条。本页不直接挂信用卡；各市场发卡机构是子行，卡片通过 `bank` 关系挂到对应子行。检索路径是「集团 → 子行 → 信用卡」。
 
 | 字段 | 值 |
 | --- | --- |
@@ -30,42 +30,42 @@ origin: manual
 
 ### CN
 
-- [[banks:hsbc-china|汇丰中国]](./hsbc-china.md)
+- [[banks:hsbc-china|HSBC CN]](./hsbc-china.md)
 
 ### GLOBAL
 
-- [[banks:hsbc-expat|汇丰 Expat]](./hsbc-expat.md)
-- [[banks:hsbc-uruguay|汇丰乌拉圭]](./hsbc-uruguay.md)
-- [[banks:hsbc-qatar|汇丰卡塔尔]](./hsbc-qatar.md)
-- [[banks:hsbc-india|汇丰印度]](./hsbc-india.md)
-- [[banks:hsbc-indonesia|汇丰印度尼西亚]](./hsbc-indonesia.md)
-- [[banks:hsbc-taiwan|汇丰台湾]](./hsbc-taiwan.md)
-- [[banks:hsbc-turkiye|汇丰土耳其]](./hsbc-turkiye.md)
-- [[banks:hsbc-egypt|汇丰埃及]](./hsbc-egypt.md)
-- [[banks:hsbc-mexico|汇丰墨西哥]](./hsbc-mexico.md)
-- [[banks:hsbc-sri-lanka|汇丰斯里兰卡]](./hsbc-sri-lanka.md)
-- [[banks:hsbc-channel-islands-isle-of-man|汇丰海峡群岛及马恩岛]](./hsbc-channel-islands-isle-of-man.md)
-- [[banks:hsbc-australia|汇丰澳大利亚]](./hsbc-australia.md)
-- [[banks:hsbc-bermuda|汇丰百慕大]](./hsbc-bermuda.md)
-- [[banks:hsbc-united-kingdom|汇丰英国]](./hsbc-united-kingdom.md)
-- [[banks:hsbc-philippines|汇丰菲律宾]](./hsbc-philippines.md)
-- [[banks:hsbc-vietnam|汇丰越南]](./hsbc-vietnam.md)
-- [[banks:hsbc-united-arab-emirates|汇丰阿联酋]](./hsbc-united-arab-emirates.md)
-- [[banks:hsbc-malaysia|汇丰马来西亚]](./hsbc-malaysia.md)
-- [[banks:hsbc-malta|汇丰马耳他]](./hsbc-malta.md)
+- [[banks:hsbc-expat|HSBC Expat]](./hsbc-expat.md)
+- [[banks:hsbc-uruguay|HSBC UY]](./hsbc-uruguay.md)
+- [[banks:hsbc-qatar|HSBC QA]](./hsbc-qatar.md)
+- [[banks:hsbc-india|HSBC IN]](./hsbc-india.md)
+- [[banks:hsbc-indonesia|HSBC ID]](./hsbc-indonesia.md)
+- [[banks:hsbc-taiwan|HSBC TW]](./hsbc-taiwan.md)
+- [[banks:hsbc-turkiye|HSBC TR]](./hsbc-turkiye.md)
+- [[banks:hsbc-egypt|HSBC EG]](./hsbc-egypt.md)
+- [[banks:hsbc-mexico|HSBC MX]](./hsbc-mexico.md)
+- [[banks:hsbc-sri-lanka|HSBC LK]](./hsbc-sri-lanka.md)
+- [[banks:hsbc-channel-islands-isle-of-man|HSBC CIIOM]](./hsbc-channel-islands-isle-of-man.md)
+- [[banks:hsbc-australia|HSBC AU]](./hsbc-australia.md)
+- [[banks:hsbc-bermuda|HSBC BM]](./hsbc-bermuda.md)
+- [[banks:hsbc-united-kingdom|HSBC UK]](./hsbc-united-kingdom.md)
+- [[banks:hsbc-philippines|HSBC PH]](./hsbc-philippines.md)
+- [[banks:hsbc-vietnam|HSBC VN]](./hsbc-vietnam.md)
+- [[banks:hsbc-united-arab-emirates|HSBC AE]](./hsbc-united-arab-emirates.md)
+- [[banks:hsbc-malaysia|HSBC MY]](./hsbc-malaysia.md)
+- [[banks:hsbc-malta|HSBC MT]](./hsbc-malta.md)
 
 ### HK
 
-- [[banks:hsbc-macau|汇丰澳门]](./hsbc-macau.md)
-- [[banks:hsbc-hong-kong|汇丰香港]](./hsbc-hong-kong.md)
+- [[banks:hsbc-macau|HSBC MO]](./hsbc-macau.md)
+- [[banks:hsbc-hong-kong|HSBC HK]](./hsbc-hong-kong.md)
 
 ### SG
 
-- [[banks:hsbc-singapore|汇丰新加坡]](./hsbc-singapore.md)
+- [[banks:hsbc-singapore|HSBC SG]](./hsbc-singapore.md)
 
 ### US
 
-- [[banks:hsbc-united-states|汇丰美国]](./hsbc-united-states.md)
+- [[banks:hsbc-united-states|HSBC US]](./hsbc-united-states.md)
 
 ## 收录信用卡
 
@@ -73,7 +73,7 @@ origin: manual
 
 ## 别名
 
-用于主仓库把计算器 issuer 字符串对齐到银行关系。裸 `HSBC` / `汇丰` 只指向本集团页，不指向汇丰香港：
+用于主仓库把计算器 issuer 字符串对齐到银行关系。裸 `HSBC` / `汇丰` 只指向本集团页，不指向 [[banks:hsbc-hong-kong|HSBC HK]](./hsbc-hong-kong.md)：
 
 - `HSBC`
 - `汇丰`

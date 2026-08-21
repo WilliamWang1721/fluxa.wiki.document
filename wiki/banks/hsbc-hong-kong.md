@@ -1,6 +1,6 @@
 ---
 collection: banks
-title: '汇丰香港'
+title: 'HSBC HK'
 slug: hsbc-hong-kong
 region: HK
 kind: subsidiary
@@ -12,15 +12,15 @@ generatedAt: 2026-08-21
 
 {{Infobox bank}}
 
-# 汇丰香港
+# HSBC HK
 
-**汇丰香港** 是 Fluxa WikiCard 的银行词条。卡片必须通过 `bank` 关系挂到本页，前台筛选和详情页都读这个关系，不要再靠标题模糊匹配。本页是 [[banks:hsbc|汇丰 / HSBC]](./hsbc.md) 集团下的市场子行。
+**HSBC HK** 是 Fluxa WikiCard 的银行词条。卡片必须通过 `bank` 关系挂到本页，前台筛选和详情页都读这个关系，不要再靠标题模糊匹配。本页是 [[banks:hsbc|HSBC]](./hsbc.md) 集团下的市场子行。
 
 | 字段 | 值 |
 | --- | --- |
 | 地区 | HK · 香港 |
 | 类型 | 子行 |
-| 所属集团 | [[banks:hsbc|汇丰 / HSBC]](./hsbc.md) |
+| 所属集团 | [[banks:hsbc|HSBC]](./hsbc.md) |
 | 官网 | https://www.hsbc.com.hk/credit-cards/products/ |
 | 积分体系 | [[reward-programs:hsbc-rewardcash|汇丰 RewardCash]](../reward-programs/hsbc-rewardcash.md) |
 | 词条数 | 10 |
@@ -45,7 +45,7 @@ generatedAt: 2026-08-21
 - `HSBC HK`
 - `汇丰香港`
 
-裸 `HSBC` / `汇丰` 指向集团页 [[banks:hsbc|汇丰 / HSBC]](./hsbc.md)，不写在本子行。
+裸 `HSBC` / `汇丰` 指向集团页 [[banks:hsbc|HSBC]](./hsbc.md)，不写在本子行。
 
 ## 迁移备注
 

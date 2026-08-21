@@ -3,7 +3,7 @@
 - [[Home|首页]](Home.md)
 - [[cards:_index|信用卡]](cards/_index.md)
 - [[banks:_index|银行]](banks/_index.md)
-- [[banks:hsbc|汇丰（集团）]](banks/hsbc.md)
+- [[banks:hsbc|HSBC（集团）]](banks/hsbc.md)
 - [[reward-programs:_index|积分体系]](reward-programs/_index.md)
 - [[sources:_index|来源]](sources/_index.md)
 - [[categories:信用卡|分类]](categories/信用卡.md)

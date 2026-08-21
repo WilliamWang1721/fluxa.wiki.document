@@ -7,7 +7,7 @@ status: published
 
 # 词条新建规则
 
-本页是 **往本仓库新增或完善词条时必须遵守的规则**。编辑入口在仓库根目录 [README.md](../../README.md)。语法细节见 [[meta:syntax|Wiki 语法]](syntax.md)，字段含义见 [[meta:payload-mapping|Payload 字段对照]](payload-mapping.md)。
+本页是 **往本仓库新增或完善词条时必须遵守的规则**。编辑入口在仓库根目录 [README.md](../../README.md)。语法细节见 [[meta:syntax|Wiki 语法]](syntax.md)，字段含义见 [[meta:payload-mapping|Payload 字段对照]](payload-mapping.md)，机构**正文主称与商标**见 [[meta:naming|名称与商标]](naming.md)。
 
 可复制的空白稿在 [`wiki/_templates/`](../_templates/)。
 
@@ -73,7 +73,7 @@ status: published
 ### 链接写法（强制）
 
 ```md
-[[banks:hsbc-hong-kong|汇丰香港]](../banks/hsbc-hong-kong.md)
+[[banks:hsbc-hong-kong|HSBC HK]](../banks/hsbc-hong-kong.md)
 [[cards:hsbc-red-credit-card|汇丰 Red 信用卡]](./hsbc-red-credit-card.md)
 [[glossary:source-level|来源等级]](../glossary/source-level.md)
 ```
@@ -148,7 +148,7 @@ status: published
 | 字段 | 规则 |
 | --- | --- |
 | `collection` | `banks` |
-| `title` | 对外中文名，如 `汇丰香港`；集团可用 `汇丰 / HSBC` |
+| `title` | 对外主称；银行见 [[meta:naming|名称与商标]](naming.md)。例：子行 `HSBC HK`，集团 `HSBC` |
 | `slug` | 文件名。集团用不带市场的品牌短名；子行 `{集团slug}-{市场}` |
 | `region` | `HK` `CN` `SG` `US` `GLOBAL` 之一；集团常用 `GLOBAL` |
 | `website` | 信用卡产品列表页，优先官方；集团用集团官网 |
@@ -166,7 +166,7 @@ status: published
 
 - **独立银行 / 子行：** 必须有「收录信用卡」（新银行可先空列表）和「别名」（主仓库 issuer 字符串，如 `Hang Seng Bank`）。子行信息框加「所属集团」链接。
 - **集团：** 必须有「子行」列表（只挂本仓已有页面，不编造市场）。集团页不直接挂信用卡。
-- **别名：** 裸品牌名（`HSBC` / `汇丰`）只写在集团页。子行用带地区的写法（`HSBC HK`），避免和集团抢同一个 issuer 字符串。
+- **别名：** 裸品牌名（`HSBC` / `汇丰`）只写在集团页。子行用带地区的写法（`HSBC HK`），避免和集团抢同一个 issuer 字符串。详见 [[meta:naming|名称与商标]](naming.md)。
 
 分类：`[[Category:银行]]` 和地区分类；集团与子行可再加集团分类（如 `[[Category:汇丰]]`）。
 
