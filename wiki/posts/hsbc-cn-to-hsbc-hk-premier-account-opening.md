@@ -224,6 +224,12 @@ IBC 来电通常来自中国大陆号码，常见为 **020** 或 **021** 开头�
 
 律师完成提交后，身份见证部分即完成。
 
+## 后续使用
+
+账户开立成功后，如果实体卡片尚未收到，可以直接通过证件注册香港汇丰流动理财：
+
+- [[posts:hsbc-hk-mobile-banking-registration-without-card|未获得卡片时如何注册香港汇丰流动理财]](hsbc-hk-mobile-banking-registration-without-card.md)
+
 [[Category:指南]]
 [[Category:汇丰]]
 [[Category:开户]]
